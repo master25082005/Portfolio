@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style=" font-family: 'Great Vibes', cursive;">Lokesh Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="static/content/lokesh.jpg">
+    <style>
+        body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #050326;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+
+}
+.container{
+    color: #9c9b93;
+    display: block; 
+ 
+}
+.right-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    bottom: 55px;
+    right: 20px;
+
+}
+.right-menu a{
+    color: #9c9b93;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    
+}
+.right-menu a:hover{
+    text-shadow: 0 0 10px #9c9b93;
+}
+.left-menu{
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+
+}
+#my-name{
+    /* Add the font and styles in CSS */
+
+    font-family: 'Great Vibes', cursive;
+    font-size: 5.5em;  /* Adjust size as needed */
+    color: #9c9b93;  /* Choose a color that fits your theme */
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 50px;
+
+
+}
+#field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60px;
+    padding-left: 390px;
+   font-family: 'Great Vibes', cursive;
+   font-weight: bold;
+   font-size: 1.5em;
+}
+.foot{
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+/*aboutme*/
+.aboutme{
+    display: block;
+    position: relative;
+    top: 360px;
+    background-color:#9c9b93 ;
+    height: 98vh;
+    margin: 10px;
+    padding: 1px;
+    border-radius: 10px;
+
+}
+.aboutme p{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: medium;
+}
+#lokesh-objective-content{
+    font-family: 'Great Vibes', cursive;
+    padding: 10px;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+.overlay-content{
+    height: 500px;
+    width: 600px;
+    color: #050326;
+    background-color: #9c9b93;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.overlay-content h1{
+    text-shadow: 0 0 10px #050326;
+}
+.resume{
+    display: none;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+.resume-content{
+    background-color: white;
+    height: 100vh;
+    width: 800px;
+    position: absolute;
+    top: 0;
+}
+.resume-content img{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.technical-skill-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project{
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.project-content{
+ position: absolute;   
+ top: 0;
+ height: fit-content;
+ width: 100%;
+ background-color: #9c9b93;
+ padding-left: 20px;
+}
+#project-home-button{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 10px;  
+    position: absolute; 
+    top: 10px; 
+    right: 30px;
+}
+/*menu img*/
+.menu-img{
+    display: none;
+}
+
+@media (max-width:440px) {
+    .right-menu{
+        display: none;
+    }
+    .menu-img{
+        display: block;
+    }
+    #menu-btn{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    #close-btn{
+        padding: 10px;
+    }
+    .img-menu {
+        display: none; /* Hides img-menu by default */
+        background-color: #9c9b93;
+        height: 100vh;
+        width: 150px;
+        margin-top: 0px;
+        position: absolute; /* Use absolute positioning for better placement */
+        top: 0; /* Start from the top */
+        right: 0; /* Align to the right */
+        z-index: 1;
+    }
+    
+    .img-menu a{
+        
+       color: #050326;
+       text-decoration: none;
+       font-weight: bold;
+       display: flex;
+       justify-content: center;
+       padding: 10px;
+    }
+    .img-menu a:hover{
+        text-shadow: 0 0 8px #050326;
+    }
+    .content{
+        text-align: center;
+        padding-top: 100px;
+    }
+    #my-name{
+        /* Add the font and styles in CSS */
+    
+        font-family: 'Great Vibes', cursive;
+        font-size: 3.5em;  /* Adjust size as needed */
+        color: #9c9b93;  /* Choose a color that fits your theme */
+        letter-spacing: 5px;
+        text-align: center;
+        padding-top: 50px;
+    
+    
+    }
+    #field{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -40px;
+        padding-left: 150px;
+       font-family: 'Great Vibes', cursive;
+       font-weight: bold;
+       font-size: 15px;
+    }
+    .section-1 img{
+        height: 30px;
+    }
+    .section-2 img{
+        height: 30px;
+    }
+    .section-3 img{
+        height: 30px;
+    }
+}
+
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="nav-bar">
+            <div class="left-menu">
+                <h2 style=" font-family: 'Great Vibes', cursive;">Portfolio</h2>
+            </div>
+            <div class="menu-img">
+                <img src="static/content/menu.png" alt="menu" style="height: 30px;" id="menu-btn">
+                <div class="img-menu" id="img-menu">
+                    <img src="static/content/close.png" alt="" id="close-btn">
+                    <a id="Project-btn">Projects</a>
+                    <a href="resume.pdf" download="resume.pdf">Resume</a>
+                    <a href="">Certificate</a>
+                </div>
+            </div>
+            <div class="right-menu" style=" font-family: 'Great Vibes', cursive;">
+                <a href="#About_me">About Me</a>
+                <a href="" id="project-mainpage-button">Projects</a>
+                <a href="#container" id="resume-button" download="resume.pdf">Resume</a>
+                
+            </div>
+        </div>
+        <div class="content">
+            <h1 id="my-name">I'm Lokesh</h1>
+            <p id="field">Full Stack Web<span style="text-decoration: underline;">Developer</span></p>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="overlay-content">
+
+                <h1 id="viewpage-name" style="font-family: 'Great Vibes', cursive;">Instagram</h1>
+                <img src="" alt="" height="300px" id="viewpage-img">
+                <a href="" id="viewpage-link" style="padding: 10px; color: white; font-weight: bold; text-decoration: none;">Link</a>
+            </div>
+        </div>
+        <div class="foot">
+            <img src="static/content/instagram.png" alt="" height="30px" onclick="overlay('instagram') " id="instagram"
+                data-image="static/content/insta_qr.png" data-name="Instagram" data-link="https://www.instagram.com/lokey__25?utm_source=qr">
+            <img src="static/content/gmail.png" alt="" height="30px" onclick="overlay('gmail')" id="gmail"
+                data-image="static/content/Gmail qr.jpg" data-name="Gmail" data-link="sureshlokesh384@gmail.com">
+            <img src="static/content/whatapp.png" alt="" height="30px" onclick="overlay('whatsapp')"
+                data-image="static/content/WhatsApp qr.jpg" id="whatsapp" data-name="Whatsapp" data-link="https://wa.me/qr/6D5QXX2VE6VHF1">
+            <img src="static/content/linkedin.png" alt="" height="30px" onclick="overlay('linkedin')" id="linkedin"
+                data-image="static/content/Linkedin qr.jpg" data-name="Linkedin" data-link="https://www.linkedin.com/in/lokesh-suresh-9b19a227b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <img src="static/content/githublogo.png" alt="" height="30px" onclick="overlay('github')" id="github"
+                data-image="static/content/Github qr.jpg" data-name="Github" data-link="https://github.com/master25082005">    
+        </div>
+
+    </div>
+    <div class="project" id="project">
+        <div class="project-content">
+            <p id="project-home-button" style="font-family: 'Great Vibes', cursive; background-color: white; border-radius: 30px;">Home</p>
+            <div class="project-section1">
+            <h1 style="font-family: 'Great Vibes', cursive; position: relative; bottom: 10px; padding-left: 10px;">Projects</h1>
+            <h4 style="font-family: 'Great Vibes', cursive; padding-left: 5px;">Project 1:</h4>
+            <img src="static/content/project1.png" alt="" height="150px">
+            <h5 style="font-family: 'Great Vibes', cursive; font-size: medium;">Role: Teamlead</h5>
+            <h5 style="font-family: 'Great Vibes', cursive; font-size: large; position: relative; bottom: 20px;">Description:</h5>
+            <p style="font-family: 'Great Vibes', cursive; position: relative; bottom: 40px; font-weight: bold;">The Project name: Bachelor's Biriyani.This was a Team Project give by Mendix on my 3rd Semester which was a vac(Value Added Course).My Team Made the project within One day.The scope of the project is to Delivery the biriyani with the Biriyani masala's </p>
+            </div><hr style="position: relative; bottom: 40px;">
+            <div class="project-section2">
+                <div class="project-section1">
+                    <h4 style="font-family: 'Great Vibes', cursive; padding-left: 5px;">Project 2:</h4>
+                    <img src="static/content/project 2.png" alt="" height="150px">
+                    <h5 style="font-family: 'Great Vibes', cursive; font-size: medium;">Project Give by Aquelle Company(Uganda,South Africa)</h5>
+                    <h5 style="font-family: 'Great Vibes', cursive; font-size: large; position: relative; bottom: 20px;">Description:</h5>
+                    <p style="font-family: 'Great Vibes', cursive; position: relative; bottom: 40px; font-weight: bold;">The Project name: Aquelle(Uganda,South Africa).This project took 1 month duration to complete.The purpose of the project is to Estimate the Total bottle comming into compay and going out of the company.I completed the project Successfully and Delivery to the Company.  </p>
+                    </div><hr style="position: relative; bottom: 40px;">
+            </div>
+            <div class="project-section3">
+                    <h2 style="font-family: 'Great Vibes', cursive; position: relative; bottom: 30px;">Project 3</h2>
+                    <h3 style="font-family: 'Great Vibes', cursive; position: relative; bottom: 40px;">Comming Soon</h3>
+            </div>
+        </div>
+    
+    </div>
+    <div class="resume" id="resume">
+        <div class="resume-content">
+            <img src="static/content/close.png" alt="" onclick="closeview('resume')">
+                <h1 style="padding-left: 10px;">LOKESH S</h1>
+                <h6 style="padding-left: 10px;">sureshlokesh384@gmail.com</h6>
+                <h6 style="padding-left: 10px;">+91-9176134092</h6>
+                <h2 style="padding-left: 10px;">OBJECTIVE</h2>
+                <pre style="text-align: center;">Motivated and hardworking Computer Science and Engineering student with a strong foundation
+in web development and design. Known for being a quick learner and a reliable team player, with
+experience leading projects effectively. Seeking opportunities to contribute and grow in a
+challenging tech environment.</pre>
+<h2 style="padding-left: 10px;">EDUCATION</h2>
+<P style="font-size: small; text-align: center;">Bachelor of Engineering (B.E.) – Computer Science and Engineering S.A. Engineering College - 2023 Present Date, chennai</P>
+<h2 style="padding-left: 10px;">TECHNICAL SKILLS</h2>
+<div style="padding-left: 30px; font-size: small;">
+<p>Web Development: HTML, CSS, JAVASCRIPT, REACT, MONGO DB… </p>
+<p>Design: UI/UX Principles, Graphic design basics</p> 
+<p>Programming: Python, c ++, java, C, JavaScript … </p>
+<p>Tools: Git, VS code, Figma, Vercel, Git hub… </p>
+</div>
+<h2 style="padding-left: 10px;">STRENGTHS</h2>
+<pre style="padding-left: 30px;">Quick leaner with a proactive approach to challenges. 
+Excellent communication and team leadership skills. 
+Strong attention and detail and a passion for creative design. </pre>
+
+        </div>
+    </div>
+    <div class="aboutme" id="About_me">
+        <h1 id="lokesh-objective-content">Lokesh's Objectcive</h1>
+        <p style="font-family: 'Great Vibes', cursive;">
+            Motivated and hardworking Computer Science and Engineering student with a strong foundation
+            in web development and design. Known for being a quick learner and a reliable team player, with
+            experience leading projects effectively. Seeking opportunities to contribute and grow in a
+            challenging tech environment.
+        </p>
+        <h1 style="font-family: 'Great Vibes', cursive; padding: 10px;">Technical Skill</h1>
+        <div class="technical-skill-images">
+            <div class="section-1">
+            <img src="static/content/icons8-html-64.png" alt="Html" height="100px">
+            <img src="static/content/icons8-css-48.png" alt="CSS" height="100px">
+            <img src="static/content/icons8-js-64.png" alt="Javascript" height="100px">
+            <img src="static/content/icons8-database-48.png" alt="Database" height="100px">
+            <img src="static/content/icons8-react-40.png" alt="React" height="100px">
+            <img src="static/content/icons8-nodejs-48.png" alt="Node-JS" height="100px">
+            </div>
+            <div class="section-2">
+            <img src="static/content/icons8-python-94.png" alt="Python" height="100px">
+            <img src="static/content/icons8-java-94.png" alt="Java" height="100px">
+            <img src="static/content/icons8-c-48.png" alt="C" height="100px">
+            <img src="static/content/icons8-code-94.png" alt="Code" height="100px">
+            <img src="static/content/c.png" alt="C++" height="100px">
+            <img src="static/content/icons8-sql-64.png" alt="Sql" height="100px">
+            </div>
+            <div class="section-3">
+                <img src="static/content/icons8-blender-48.png" alt="Blender" height="100px">
+                <img src="static/content/icons8-figma-48.png" alt="Figma" height="100px">
+                <img src="static/content/icons8-github-94.png" alt="Github" height="100px">
+                <img src="static/content/icons8-design-94.png" alt="Design" height="100px">
+                <img src="static/content/icons8-canva-48.png" alt="Canva" height="100px">
+            </div>
+        </div>
+       
+    </div>
+
+    <script>
+    let menu = document.getElementById("menu-btn");
+menu.addEventListener( "click",function(){
+    let list = document.getElementById("img-menu");
+    if (list.style.display === 'block') {
+        list.style.display = "none";
+    } else {
+        list.style.display = "block";
+    }
+});
+let closemenu = document.getElementById("close-btn");
+closemenu.addEventListener( "click",function(){
+    let list = document.getElementById("img-menu");
+    if (list.style.display === 'block') {
+        list.style.display = "none";
+    } else {
+        list.style.display = "block";
+    }
+});
+document.addEventListener('click', (event) => {
+    const overlay = document.getElementById('overlay');
+    if (event.target === overlay) {
+        overlay.style.display = 'none';
+    }
+/*function openview(name){
+    document.getElementById(name).style.display = 'flex';
+}*/
+});
+function closeview(name){
+    document.getElementById(name).style.display = 'none';
+    }
+function getlink(name){
+    var link =document.getElementById(name).getAttribute('data-link');
+    document.getElementById('viewpage-link').setAttribute('href',link);
+}
+function overlay(name){
+
+    var image = document.getElementById(name).getAttribute('data-image');
+    var nameh1 = document.getElementById(name).getAttribute('data-name');
+    var name_arg = name;
+    let linkline = name+' Link';
+    document.getElementById('overlay').style.display = 'flex';
+    document.getElementById('viewpage-name').innerHTML = nameh1;
+    document.getElementById('viewpage-img').setAttribute('src', image);
+    document.getElementById('viewpage-link').innerHTML = linkline;
+    getlink(name_arg);
+  
+}
+document.getElementById('resume-button').addEventListener('click',() =>{
+    document.getElementById('resume').style.display = 'flex';
+});
+/* Project */
+// Event listener for the "Projects" button in the right menu
+document.getElementById('project-mainpage-button').addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default link behavior
+    document.getElementById('project').style.display = 'flex';
+    document.getElementById('container').style.display = 'none';
+    document.getElementById('About_me').style.display = 'none';
+    console.log("Projects button clicked"); // Debugging
+});
+
+// Event listener for the "Projects" button in the mobile menu
+document.getElementById('Project-btn').addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default link behavior
+    document.getElementById('project').style.display = 'flex';
+    document.getElementById('container').style.display = 'none';
+    document.getElementById('About_me').style.display = 'none';
+    console.log("Mobile Projects button clicked"); // Debugging
+});
+
+// Event listener for the "Home" button inside the project section
+document.getElementById('project-home-button').addEventListener('click', function() {
+    document.getElementById('project').style.display = 'none';
+    document.getElementById('container').style.display = 'block';
+    document.getElementById('About_me').style.display = 'block';
+    console.log("Home button clicked"); // Debugging
+});
+    </script>
+</body>
+
+</html>
